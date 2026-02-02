@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-express-restful-api",
+  "version": "1.0.0",
+  "description": "Node.js application using Express.js to build CRUD endpoints",
+  "main": "server.js",
+  "repository": "https://github.com/MAbdurahman/nodejs-express-restful-api.git",
+  "author": "Mahdi Abdurrahman <mdbdrrhm@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "SET NODE_ENV=development& nodemon server.js",
+    "prod": "SET NODE_ENV=production& node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.1.11"
+  },
+  "nodemonConfig": {
+    "delay": 2000
+  }
+}
