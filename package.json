@@ -14,10 +14,11 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "morgan": "^1.10.1"
+    "winston": "^3.19.0"
   },
   "devDependencies": {
     "colors": "^1.4.0",
+    "morgan": "^1.10.1",
     "nodemon": "^3.1.11"
   },
   "nodemonConfig": {
