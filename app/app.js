@@ -25,13 +25,17 @@ if(process.env.NODE_ENV === 'development'){
 }
 app.use(express.json());
 
+/*************************** import all routes ***************************/
+const homeRoute = require('./../routes/homeRoute');
 
 
-app.get('/', (req, res) => {
+/********************************* routes *********************************/
+
+app.use('/', homeRoute);
+
+/*app.get('/', (req, res) => {
    res.send(`<h2>Welcome to Node.js-Express-Restful-API</h2>`);
-});
-
-
+});*/
 
 
 
