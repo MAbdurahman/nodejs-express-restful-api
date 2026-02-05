@@ -30,12 +30,9 @@ const homeRoute = require('./../routes/homeRoute');
 
 
 /********************************* routes *********************************/
-
 app.use('/', homeRoute);
 
-/*app.get('/', (req, res) => {
-   res.send(`<h2>Welcome to Node.js-Express-Restful-API</h2>`);
-});*/
+
 
 
 
