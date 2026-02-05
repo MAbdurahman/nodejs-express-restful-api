@@ -7,10 +7,7 @@ function HomePage() {
         <meta charset='UTF-8'>
         <meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
               name='viewport'>
-        <meta content='ie=edge' http-equiv='X-UA-Compatible'>
-        <!--favicon -->
-        <link href='http://127.0.0.1:5000/favicon.png' rel='icon' type='image/png'/>
-              
+        <meta content='ie=edge' http-equiv='X-UA-Compatible'>      
         <!--normalize styles -->
         <link crossorigin='anonymous' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'
               integrity='sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=='
@@ -19,7 +16,7 @@ function HomePage() {
           <link href='https://fonts.googleapis.com' rel='preconnect'>
           <link crossorigin href='https://fonts.gstatic.com' rel='preconnect'>
           <link href='https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&display=swap' rel='stylesheet'> 
-        <title>Backend Server</title>
+        <title>Node.js Express Server</title>
         <style>
             
             *,

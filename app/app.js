@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 const colors = require('colors');
 const logger = require('./../middlewares/loggerMiddleware');
+const booksRoutes = require('./../routes/booksRoute');
+
 
 /************************* setup config file *************************/
 if (process.env.NODE_ENV !== 'production') {
@@ -18,22 +20,18 @@ if(process.env.NODE_ENV === 'development'){
    // morgan middleware
    app.use(morgan('dev'));
    // logger middleware
-   app.use((req, res, next) => {
-      logger.info(`${req.method} ${req.url}`);
-      next();
-   });
+   app.use(logger);
 }
 app.use(express.json());
 
 /*************************** import all routes ***************************/
 const homeRoute = require('./../routes/homeRoute');
+const booksRoute = require('./../routes/booksRoute');
 
 
 /********************************* routes *********************************/
 app.use('/', homeRoute);
-
-
-
+app.use('/api/v1.0/books', booksRoutes);
 
 
 module.exports = app;

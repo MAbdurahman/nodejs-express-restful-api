@@ -1,6 +1,7 @@
 const dotenv = require('dotenv');
 const colors = require('colors');
 const app = require('./app/app');
+const fs = require('fs');
 
 /************************* configure setup *************************/
 dotenv.config({path: './configs/config.env', quiet: true});

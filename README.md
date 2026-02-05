@@ -2,7 +2,7 @@
 
 ## Description 
 <p>nodejs-express-restful-api is a Node.js application utilizing Express.js to build
-CRUD endpoints.</p>
+CRUD endpoints. Node.js is a runtime environment that allows developers to run JavaScript on the server side. Express.js is a web framework for Node.js that simplifies building web applications and APIs. A REST API (Representational State Transfer Application Programming Interface) built with Node and Express, which allows different applications to communicate over HTTP using standard methods like GET, PATCH, POST, PUT, and DELETE to manage resources.</p>
 
 ## Features
 - Node.js
@@ -13,7 +13,7 @@ CRUD endpoints.</p>
 - Middlewares
 - Postman Collection
 
-### Create the config.env file in the backend / config directory
+### Create the config.env file in the config directory
 ```env
 # Useful Variables
 PORT=
