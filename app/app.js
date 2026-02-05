@@ -3,8 +3,6 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 const colors = require('colors');
 const logger = require('./../middlewares/loggerMiddleware');
-const booksRoutes = require('./../routes/booksRoute');
-
 
 /************************* setup config file *************************/
 if (process.env.NODE_ENV !== 'production') {
@@ -26,7 +24,7 @@ app.use(express.json());
 
 /*************************** import all routes ***************************/
 const homeRoute = require('./../routes/homeRoute');
-const booksRoute = require('./../routes/booksRoute');
+const booksRoutes = require('./../routes/booksRoute');
 
 
 /********************************* routes *********************************/
