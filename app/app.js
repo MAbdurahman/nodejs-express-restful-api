@@ -26,10 +26,8 @@ app.use(express.json());
 const homeRoute = require('./../routes/homeRoute');
 const booksRoutes = require('./../routes/booksRoute');
 
-
 /********************************* routes *********************************/
 app.use('/', homeRoute);
 app.use('/api/v1.0/books', booksRoutes);
-
 
 module.exports = app;

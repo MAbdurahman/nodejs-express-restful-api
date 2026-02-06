@@ -36,7 +36,7 @@ exports.validateBody = (req, res, next) => {
 
 exports.createBook = (req, res) => {
    const newId = books[books.length - 1].id + 1;
-   const newBook = Object.assign({id: newId}, req.body)
+   const newBook = Object.assign({id: newId}, req.body);
    books.push(newBook);
    fs.writeFile('./data/booksData.json', JSON.stringify(books), (err) => {
       res.status(201).json({
@@ -45,8 +45,8 @@ exports.createBook = (req, res) => {
          data: {
             book: newBook
          }
-      })
-   })
+      });
+   });
 }
 
 exports.getAllBooks = (req, res) => {
@@ -79,7 +79,7 @@ exports.getSingleBook = (req, res) => {
 }
 
 exports.updateBook = (req, res) => {
-   console.log('updateBook');
+
    let id = req.params.id * 1;
    let bookToUpdate = books.find(book => book.id === id);
 
@@ -96,12 +96,12 @@ exports.updateBook = (req, res) => {
          data: {
             book: bookToUpdate
          }
-      })
-   })
+      });
+   });
 }
 
 exports.deleteBook = (req, res) => {
-   console.log('deleteBook');
+   
    const id = req.params.id * 1;
    const bookToDelete = books.find(book => book.id === id);
 
